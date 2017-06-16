@@ -12,6 +12,59 @@ svg {
   border: 1px solid red;
 }
 
-svg text {
-  text-anchor: middle;
+svg rect {
+  opacity: 0.5;
+}
+
+g.helpers,
+g.noTransform,
+g.svgTransform {
+  line {
+    //stroke-width: 0.5px;
+    stroke-dasharray: 5px 10px;
+  }
+
+  g.legend line {
+    stroke-dasharray: 0 0;
+  }
+}
+
+.helpers line {
+  stroke: #34495e;
+}
+
+
+g.noTransform {
+  line {
+    stroke: #2980b9;
+  }
+  rect {
+    fill: #2ecc71
+  }
+}
+
+g.svgTransform {
+  line {
+    stroke: #c0392b;
+  }
+  rect {
+    fill: #e67e22
+  }
+}
+
+g.legend {
+  line {
+    stroke: #2c3e50;
+  }
+  path.arrow {
+    stroke: none;
+    fill: #2c3e50;
+  }
+
+  text {
+    stroke: none;
+    font-family: arial, sans-serif;
+    font-weight: 700;
+  }
+
 }
