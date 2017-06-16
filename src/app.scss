@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+svg {
+  border: 1px solid red;
+}
+
+svg text {
+  text-anchor: middle;
+}
